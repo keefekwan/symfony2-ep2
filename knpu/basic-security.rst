@@ -119,7 +119,7 @@ need ``ROLE_USER`` to access these pages:
         # ...
         access_control:
             - { path: ^/new, roles: ROLE_USER }
-            - { path: ^/create , roles: ROLE_USER }
+            - { path: ^/create, roles: ROLE_USER }
 
 Try it out! When we try to add an event, we're redirected to "/login", which
 doesn't actually exist yet. This is the magic of the firewall: two quick
